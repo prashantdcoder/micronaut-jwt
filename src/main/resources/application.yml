@@ -15,6 +15,6 @@ micronaut:
         signatures:
           secret:
             generator:
-              secret: 'gGvKbUQhGHVHZAkTZZubZvGVdWPixoIdWIWzXkhiSINCZhSvpbQkLMNFPEAchWaI'
+              secret: 'changeThisWithYourSecret'
               refresh-token-expiration: 3600
               access-token-expiration: 3600

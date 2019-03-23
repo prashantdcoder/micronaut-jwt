@@ -8,7 +8,6 @@ import io.micronaut.security.token.jwt.render.AccessRefreshToken
 
 import javax.inject.Inject
 import javax.inject.Singleton
-import java.security.Principal
 
 @Singleton
 class AuthenticationService {
@@ -30,9 +29,5 @@ class AuthenticationService {
                 roles: userDetails.roles
         )
         return userVO
-    }
-
-    Map verify(Principal principal) {
-        return ['username': principal.getName()]
     }
 }
