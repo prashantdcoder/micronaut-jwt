@@ -1,0 +1,20 @@
+micronaut:
+  application:
+    name: jwt
+
+  security:
+    enabled: true
+    endpoints:
+      login:
+        enabled: true
+      oauth:
+        enabled: true
+    token:
+      jwt:
+        enabled: true
+        signatures:
+          secret:
+            generator:
+              secret: 'gGvKbUQhGHVHZAkTZZubZvGVdWPixoIdWIWzXkhiSINCZhSvpbQkLMNFPEAchWaI'
+              refresh-token-expiration: 3600
+              access-token-expiration: 3600
